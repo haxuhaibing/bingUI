@@ -1,19 +1,19 @@
+<!--
+ * @Date: 2024-03-07 00:40:35
+ * @LastEditors: hi@xuhaibing.com
+ * @LastEditTime: 2024-03-07 00:54:26
+ * @FilePath: /npm-test/packages/App.vue
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <c-btn> <template v-slot:header>77 </template>888</c-btn>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+};
 </script>
 
 <style>
