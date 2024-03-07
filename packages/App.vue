@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-03-07 00:40:35
  * @LastEditors: hi@xuhaibing.com
- * @LastEditTime: 2024-03-07 00:54:26
- * @FilePath: /npm-test/packages/App.vue
+ * @LastEditTime: 2024-03-07 21:28:11
+ * @FilePath: /bingUI/packages/App.vue
 -->
 <template>
   <div id="app">
@@ -13,6 +13,10 @@
 <script>
 export default {
   name: "App",
+  mounted() {
+    console.log({} == {})  // true
+ 
+  },
 };
 </script>
 
