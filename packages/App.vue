@@ -1,22 +1,27 @@
 <!--
  * @Date: 2024-03-07 00:40:35
  * @LastEditors: hi@xuhaibing.com
- * @LastEditTime: 2024-03-07 21:28:11
+ * @LastEditTime: 2024-03-08 16:54:38
  * @FilePath: /bingUI/packages/App.vue
 -->
 <template>
-  <div id="app">
-    <c-btn> <template v-slot:header>77 </template>888</c-btn>
-  </div>
+  <a-config-provider :locale="locale">
+    <div id="app">
+      <c-date-range></c-date-range>
+    </div>
+  </a-config-provider>
 </template>
 
 <script>
+import zhCN from "ant-design-vue/lib/locale-provider/zh_CN";
 export default {
   name: "App",
-  mounted() {
-    console.log({} == {})  // true
- 
+  data() {
+    return {
+      locale: zhCN,
+    };
   },
+  mounted() {},
 };
 </script>
 
